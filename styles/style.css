@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+div {
+    border: 1px solid gray;
+}
+html {
+    font-size: 14px;
+}
+*{
+    font-family: Quicksand;
+    margin: 1px;
+    padding: 0px;
+}
+:root {
+    --black : #111111;
+    --white : #FFFFFF;
+    --skyblue : #01ACFD;
+    --orange : #FEA301;
+    --cyanblue : #05D4DF;
+    --darkblue : #5D58EF;
+
+}
+/* for navigation bar */
+.navbar {
+    margin: 20px auto;
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+#nav-left h3 {
+    font-size: 2rem;
+}
+#nav-center ul {
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px ;
+}
+/* For the banner section  */
+.banner {
+    margin: 20px auto;
+    width: 1120px;
+    display: flex;
+    height: 530px;
+}
+.b-head {
+    padding: 80px 0;
+    width: 620px;
+    
+}
+.b-head h1 {
+    font-size: 4rem;
+}
+.b-content {
+    height: 520px;
+    margin: 0 auto;
+}
+.b-content img {
+    height: 100%;
+}
+.text-emp {
+    color: var(--orange) ;
+}
+.text-towr{
+    color : var(--skyblue);
+}
+/* For curriculum section */
+.box-container{
+    display: flex;
+}
+.story-container{
+    display: grid;
+    
+}
+.R-story {
+    
+}
