@@ -74,9 +74,14 @@ html {
     display: flex;
 }
 .story-container{
-    display: grid;
-    
+    display: flex;
 }
-.R-story {
-    
+.R-stories {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* for footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
 }
