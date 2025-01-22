@@ -20,12 +20,30 @@ html {
     --darkblue : #5D58EF;
 
 }
+.btn {
+    padding: 6px 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--white);
+}
 /* for navigation bar */
 .navbar {
     margin: 20px auto;
     width: 1120px;
     display: flex;
     justify-content: space-between;
+}
+.nav-list li:nth-child(1){
+    color: var(--orange);
+}
+.nav-list li:nth-child(2){
+    color: var(--skyblue);
+}
+.nav-list li:nth-child(3){
+    color: var(--cyanblue);
+}
+.nav-list li:nth-child(4){
+    color: var(--darkblue);
 }
 .nav {
     display: flex;
@@ -40,6 +58,9 @@ html {
     display: flex;
     justify-content: space-evenly;
     width: 350px ;
+}
+.nav-btn {
+    background-color: var(--orange);
 }
 /* For the banner section  */
 .banner {
@@ -56,6 +77,9 @@ html {
 .b-head h1 {
     font-size: 4rem;
 }
+.b-head p {
+    padding: 20px 0;
+}
 .b-content {
     height: 520px;
     margin: 0 auto;
@@ -69,10 +93,82 @@ html {
 .text-towr{
     color : var(--skyblue);
 }
+.black-btn {
+    background-color: var(--black);
+}
 /* For curriculum section */
+.curriculum {
+    background-image: url(../assets/bg.png);
+    height: 700px;
+}
+.curr-heading {
+    text-align: center;
+    padding: 40px 0;
+}
 .box-container{
     display: flex;
+    justify-content: space-evenly;
 }
+.curr-box {
+    text-align: center;
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius:20px ;
+
+}
+.gr-skyblue{
+    background-image: linear-gradient(rgb(175, 232, 255),white,white,white);
+    border: 1px solid rgb(175, 232, 255);
+}
+.gr-yellow{
+    background-image: linear-gradient(rgb(255, 255, 205),white,white,white);
+    border: 1px solid rgb(255, 255, 205);
+}
+
+.gr-purple{
+    background-image: linear-gradient(rgb(255, 207, 255),white,white,white);
+    border: 1px solid rgb(255, 207, 255);
+}
+
+.curr-box img {
+    margin-left: 95px;
+    width: 40%;
+    
+}
+.readmore {
+    text-decoration: none;
+}
+.a{
+    color:blue ;
+}
+.b{
+    color:orange ;
+}
+.c{
+    color:purple ;
+}
+
+.symbol ,.symbol > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.symbol h1 {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: #FEA301;
+    color: #FFFFFF;
+    padding: 10px 10px ;
+    border-radius: 50%;
+    margin: 40px 3.5px;
+
+}
+/* for stories section */
 .story-container{
     display: flex;
 }
@@ -82,6 +178,61 @@ html {
 }
 /* for footer */
 .footer {
+    height: 350px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.f-left {
+    display: flex;
+}
+.f-center li {
+    list-style: none;
+    padding: 6px 0;
+}
+.f-right {
+    /* padding-top: 5px; */
+}
+
+
+@media screen and (max-width:576px){
+    .navbar {
+        height: 85px;
+        /* border: 1px solid orange; */
+    }
+    #nav-left h3 {
+        display: none;
+    }
+    .nav-img {
+        margin-left: 25px;
+    }
+    #nav-center , .nav-btn {
+        display: none;
+    }
+    .menu-icon  {
+        height: 25px;
+        width: 45px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .menu-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: var(--black);
+    }
+    .banner {
+        flex-direction: column-reverse;
+        height: 900px;
+        width: auto;
+        
+    }
+    .b-head {
+        text-align: center;
+        padding: 20px 0;
+        width: auto;
+    
 }
