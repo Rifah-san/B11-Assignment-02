@@ -98,6 +98,7 @@ html {
 .black-btn {
     background-color: var(--black);
 }
+
 /* For curriculum section */
 .headlines {
     font-size: 2.4rem;
@@ -116,17 +117,32 @@ html {
     justify-content: space-evenly;
 }
 .curr-box {
+    padding-top: 50px;
     text-align: center;
     height: 400px;
     width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-evenly;  */
     border-radius:20px ;
 
 }
+.curr-box h4 {
+    padding: 40px 0;
+    font-size: 1.5rem;
+}
+/* .curr-box img {
+    margin-left: 95px;
+    width: 40%;
+    
+} */
+ .readmore {
+    text-decoration: none;
+    font-weight: 600;
+}
 .grey-description {
     padding: 0 10px;
+    padding-bottom: 30px;
     color: rgba(128, 128, 128, 1);
 }
 .gr-skyblue{
@@ -143,15 +159,8 @@ html {
     border: 1px solid rgb(255, 207, 255);
 }
 
-.curr-box img {
-    margin-left: 95px;
-    width: 40%;
-    
-}
-.readmore {
-    text-decoration: none;
-    font-weight: 600;
-}
+
+
 .a{
     color:blue ;
 }
@@ -177,7 +186,11 @@ html {
     padding: 10px 10px ;
     border-radius: 50%;
     margin: 40px 3.5px;
-
+    cursor: pointer;
+}
+.arrow:hover {
+    background-color: #FFFFFF;
+    color: #111111;
 }
 /* for stories section */
 .stories {
@@ -328,7 +341,7 @@ html {
     
      }
      .curriculum {
-        height: 1200px;
+        height: 1400px;
      }
      .box-container{
         flex-direction: column;
@@ -336,8 +349,8 @@ html {
         gap: 20px;
     }
     .curr-box {
-        height: 320px;
-        width: 320px;
+        height: 350px;
+        width: 90%;
     }
     .symbol {
         display: none;
