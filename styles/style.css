@@ -11,6 +11,9 @@ html {
     margin: 0px;
     padding: 0px;
 }
+a {
+    text-decoration: none;
+}
 :root {
     --black : #111111;
     --white : #FFFFFF;
@@ -34,16 +37,16 @@ html {
     display: flex;
     justify-content: space-between;
 }
-.nav-list li:nth-child(1){
+.nav-list li:nth-child(1) a {
     color: var(--orange);
 }
-.nav-list li:nth-child(2){
+.nav-list li:nth-child(2) a {
     color: var(--skyblue);
 }
-.nav-list li:nth-child(3){
+.nav-list li:nth-child(3) a {
     color: var(--cyanblue);
 }
-.nav-list li:nth-child(4){
+.nav-list li:nth-child(4) a {
     color: var(--darkblue);
 }
 .nav {
@@ -60,6 +63,7 @@ html {
     justify-content: space-evenly;
     width: 350px ;
 }
+
 .nav-btn {
     background-color: var(--orange);
 }
