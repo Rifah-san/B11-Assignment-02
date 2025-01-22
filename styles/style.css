@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-div {
+/* div {
     border: 1px solid gray;
-}
+} */
 html {
     font-size: 14px;
 }
@@ -25,11 +25,12 @@ html {
     border: 1px solid transparent;
     border-radius: 5px;
     color: var(--white);
+    font-weight: 600;
 }
 /* for navigation bar */
 .navbar {
-    margin: 20px auto;
-    width: 1120px;
+    margin: 20px 60px;
+    /* width: 1120px; */
     display: flex;
     justify-content: space-between;
 }
@@ -79,6 +80,7 @@ html {
 }
 .b-head p {
     padding: 20px 0;
+    font-size: 1.2rem;
 }
 .b-content {
     height: 520px;
@@ -97,13 +99,17 @@ html {
     background-color: var(--black);
 }
 /* For curriculum section */
+.headlines {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
 .curriculum {
     background-image: url(../assets/bg.png);
     height: 700px;
 }
 .curr-heading {
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .box-container{
     display: flex;
@@ -118,6 +124,10 @@ html {
     justify-content: space-evenly;
     border-radius:20px ;
 
+}
+.grey-description {
+    padding: 0 10px;
+    color: rgba(128, 128, 128, 1);
 }
 .gr-skyblue{
     background-image: linear-gradient(rgb(175, 232, 255),white,white,white);
@@ -140,6 +150,7 @@ html {
 }
 .readmore {
     text-decoration: none;
+    font-weight: 600;
 }
 .a{
     color:blue ;
@@ -198,6 +209,12 @@ html {
     border-top-right-radius:15px ;
     border-top-left-radius:15px ;
 }
+.L-stories > h3 {
+    font-size: 1.8rem;
+}
+.L-stories > h4 {
+    padding: 20px;
+}
 .R-stories {
     display: grid;
     grid-template-columns: repeat(2,270px);
@@ -213,8 +230,24 @@ html {
     border-radius: 15px;
     background-color: #FFFFFF;
 }
+.date-btn {
+    padding: 5px 10px;
+    border-color: transparent;
+    border-radius: 15px;
+    translate: 40px -15px;
+    color: #FFFFFF;
+}
+.cyan {
+    background-color: var(--cyanblue);
+}
+.orange {
+    background-color: var(--orange);
+}
 .story-btn {
     text-align: center;
+}
+.highlights  {
+    padding : 20px  ;
 }
 /* for footer */
 .footer {
@@ -224,10 +257,17 @@ html {
     justify-content: space-around;
     /* align-items: center; */
     padding: 50px 0;
+    color: #FFFFFF;
 }
 .f-left {
     display: flex;
     margin-bottom: 20px;
+}
+.f-left h3 {
+    font-size: 2rem;
+}
+.f-center h3 {
+    padding-bottom: 10px;
 }
 .f-center li {
     list-style: none;
@@ -245,8 +285,10 @@ html {
 
 @media screen and (max-width:576px){
     .navbar {
+        margin:0 ;
+        padding-right: 20px;
         height: 85px;
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
     }
     #nav-left h3 {
         display: none;
@@ -259,17 +301,18 @@ html {
     }
     .menu-icon  {
         height: 25px;
-        width: 45px;
-        margin-right: 20px;
+        width: 35px;
+        /* margin-right: 20px; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 6px;
         align-items: center;
         
     }
     .menu-icon span {
         width: 100%;
-        height: 3px;
+        height: 3.5px;
+        border-radius: 2px;
         background-color: var(--black);
     }
     .banner {
@@ -285,7 +328,7 @@ html {
     
      }
      .curriculum {
-        height: 1100px;
+        height: 1200px;
      }
      .box-container{
         flex-direction: column;
@@ -305,9 +348,11 @@ html {
     .R-stories {
         grid-template-rows: repeat(2,300px);
     }
-    footer {
+    .footer {
         
         flex-direction: column;
         gap: 15px;
+        padding-left: 20px;
+       
     }
     }
