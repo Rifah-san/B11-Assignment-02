@@ -219,10 +219,11 @@ html {
 /* for footer */
 .footer {
     background-color: var(--cyanblue);
-    height: 350px;
+    /* height: 350px; */
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    padding: 50px 0;
 }
 .f-left {
     display: flex;
@@ -283,3 +284,30 @@ html {
         width: auto;
     
      }
+     .curriculum {
+        height: 1100px;
+     }
+     .box-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .curr-box {
+        height: 320px;
+        width: 320px;
+    }
+    .symbol {
+        display: none;
+    }
+    .L-stories {
+        display: none;
+    }
+    .R-stories {
+        grid-template-rows: repeat(2,300px);
+    }
+    footer {
+        
+        flex-direction: column;
+        gap: 15px;
+    }
+    }
